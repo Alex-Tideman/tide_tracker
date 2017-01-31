@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, input {
+  font: menu;
+}
+
+body > div {
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+textarea, input, div, button { outline: none; }
+
+input {
+  width: 35px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: inset black 1px 1px 2px;
+}
+
+.date{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.controls {
+  background-color: rgb(217, 241, 238);
+  margin-top: 1em;
+  padding: 1em;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.controls button {
+  background-color: rgb(181, 220, 216);
+  border: none;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+}
+
+.controls button:hover {
+  background-color: rgb(156, 198, 192);
+}
+
+.controls button:active {
+  background-color: rgb(144, 182, 177);
+}
+
+.controls button:disabled {
+  background-color: rgb(196, 204, 202);
+}
+
+.content {
+  height: 100%;
+}
+
+.wellness {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background: rgb(144, 182, 177);
+}
+
+.fun {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background: rgb(144, 182, 177);
+}
+
+.learning {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 18px;
+  background: rgb(144, 182, 177);
+}
+
+
+.clippings-list-item {
+  border: 1px solid rgb(178, 193, 191);
+  box-shadow: 1px 1px 1px 1px rgba(205, 228, 224, 0.78);
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.clipping-text {
+  background-color: rgb(228, 248, 245);
+  padding: 0.5em;
+  min-width: 100%;
+  max-height: 10em;
+  whitepsace: pre;
+  overflow: scroll;
+}

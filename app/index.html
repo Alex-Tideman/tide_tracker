@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tide Tracker</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="date">
+        <h2 id="today"></h2>
+        <h2 id="time"></h2>
+      </section>
+
+      <section class="content">
+        <div class="wellness">
+          <div>Fruits <input type="text"/></div>
+          <div>Veggies <input type="text"/></div>
+          <div>Sleep <input type="text"/></div>
+          <div>Pushups <input type="text"/></div>
+          <div>Running <input type="text"/></div>
+        </div>
+        <div class="fun">
+          <div>Chilling <input type="text"/></div>
+          <div>Play with Dog <input type="text"/></div>
+          <div>See the World <input type="text"/></div>
+        </div>
+        <div class="learning">
+          <div>Reading <input type="text"/></div>
+          <div>Coding <input type="text"/></div>
+          <div>Watching <input type="text"/></div>
+        </div>
+      </section>
+      <section class="controls">
+        <button id="wellness-btn">Add Wellness +</button>
+        <button id="fun-btn">Add Fun +</button>
+        <button id="learning-btn">Add Learning +</button>
+      </section>
+    </div>
+    <script>
+      require('./renderer');
+    </script>
+  </body>
+</html>
