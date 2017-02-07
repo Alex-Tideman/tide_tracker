@@ -14,28 +14,34 @@
       </section>
 
       <section class="content">
-        <div class="wellness">
-          <div>Fruits <input type="text"/></div>
-          <div>Veggies <input type="text"/></div>
-          <div>Sleep <input type="text"/></div>
-          <div>Pushups <input type="text"/></div>
-          <div>Running <input type="text"/></div>
+        <div class="content-group wellness">
+          <div>Fruits <input id="fruits" placeholder="servings" type="text"/></div>
+          <div>Veggies <input id="veggies" placeholder="servings" type="text"/></div>
+          <div>Pushups <input id="pushups" placeholder="number" type="text"/></div>
+          <div>Running <input id="running" placeholder="miles" type="text"/></div>
+          <div>Sleep <input id="sleep" placeholder="hours" type="text"/></div>
         </div>
-        <div class="fun">
-          <div>Chilling <input type="text"/></div>
-          <div>Play with Dog <input type="text"/></div>
-          <div>See the World <input type="text"/></div>
+        <div class="content-group fun">
+          <div>Chilling <input id="chilling" placeholder="mins" type="text"/></div>
+          <div>Friends <input id="friends" placeholder="mins" type="text"/></div>
+          <div>Dog Time <input id="dog" placeholder="mins" type="text"/></div>
+          <div>Travel <input id="travel" placeholder="mins" type="text"/></div>
+          <div>Hike <input id="hike" placeholder="mins" type="text"/></div>
         </div>
-        <div class="learning">
-          <div>Reading <input type="text"/></div>
-          <div>Coding <input type="text"/></div>
-          <div>Watching <input type="text"/></div>
+        <div class="content-group learning">
+          <div>Reading <input id="reading" placeholder="mins" type="text"/></div>
+          <div>Coding <input id="coding" placeholder="mins" type="text"/></div>
+          <div>Watching <input id="watching" placeholder="mins" type="text"/></div>
+          <div>Experiencing <input id="experiencing" placeholder="mins" type="text"/></div>
+          <div>Meditating <input id="meditating" placeholder="mins" type="text"/></div>
         </div>
+        <button id="submit">Submit Today</button>
       </section>
-      <section class="controls">
-        <button id="wellness-btn">Add Wellness +</button>
-        <button id="fun-btn">Add Fun +</button>
-        <button id="learning-btn">Add Learning +</button>
+      <section class="today-chart">
+        <canvas id="dayChart" width="400" height="400"></canvas>
+      </section>
+      <section class="weekly-chart">
+        <canvas id="weekChart" width="400" height="400"></canvas>
       </section>
     </div>
     <script>

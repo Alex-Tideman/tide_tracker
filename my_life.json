@@ -1,0 +1,61 @@
+{
+  "my_life": [
+    {
+      "February 5th, 2017": {
+        "chilling": "20",
+        "coding": "45",
+        "dog": "20",
+        "experiencing": "0",
+        "friends": "75",
+        "fruits": "3",
+        "hike": "40",
+        "meditating": "20",
+        "pushups": "20",
+        "reading": "0",
+        "running": "1.5",
+        "sleep": "8",
+        "travel": "30",
+        "veggies": "2",
+        "watching": "20"
+      }
+    },
+    {
+      "February 6th, 2017": {
+        "chilling": "100",
+        "coding": "0",
+        "dog": "120",
+        "experiencing": "60",
+        "friends": "20",
+        "fruits": "0",
+        "hike": "20",
+        "meditating": "0",
+        "pushups": "100",
+        "reading": "60",
+        "running": "2.5",
+        "sleep": "7",
+        "travel": "30",
+        "veggies": "2",
+        "watching": "20"
+      }
+    },
+    {
+      "February 7th, 2017": {
+        "chilling": "",
+        "coding": "",
+        "dog": "9",
+        "experiencing": "",
+        "friends": "57",
+        "fruits": "8",
+        "hike": "8",
+        "meditating": "",
+        "pushups": "8",
+        "reading": "0",
+        "running": "9",
+        "sleep": "8",
+        "travel": "98",
+        "veggies": "9",
+        "watching": ""
+      }
+    }
+  ]
+}
