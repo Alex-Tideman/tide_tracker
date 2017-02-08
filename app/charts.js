@@ -2,7 +2,7 @@ const $ = require('jquery');
 const Chart = require('Chart.js')
 const { getChartData } = require('./dataChartObject')
 
-const showWeekChart = exports.showWeekChart = (data) => {
+const showWeekChart = exports.showWeekChart = (data, width = 400) => {
   $('.weekly-chart').show()
 
   let days = data['my_life']
@@ -23,11 +23,13 @@ const showWeekChart = exports.showWeekChart = (data) => {
       type: 'line',
       data: {
           labels: labels,
-          datasets: getChartData(dayChartData)
+          datasets: getChartData(dayChartData, width)
       },
       options: {
+          spanGaps: true,
           legend: {
             display: true,
+            position: 'bottom',
             labels: {
               fontColor: 'rgba(235, 235, 235, 1)',
               fontSize: 10

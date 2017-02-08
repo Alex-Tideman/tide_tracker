@@ -8,7 +8,10 @@ const menubar = Menubar({
   height: 500,
   icon: './images/icon.png'
 })
+
 const historyFile = 'my_life.json'
+let fullHistory = null
+let resizeTimer;
 
 menubar.on('ready', () => {
   console.log('Application is ready.');
@@ -16,15 +19,23 @@ menubar.on('ready', () => {
 
 menubar.on('after-create-window', function () {
   menubar.window.loadURL(`file://${__dirname}/index.html`);
+  menubar.window.on('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      menubar.window.webContents.send('resized' , {data: fullHistory, bounds: menubar.window.getBounds()});
+    }, 250);
+
+  })
 });
+
 
 ipcMain.on('today', (event, data) => {
   saveFile(data)
-  event.sender.send('today', readHistory())
+  event.sender.send('today', fullHistory)
 })
 
 ipcMain.on('get-chart', (event, data) => {
-  event.sender.send('today', readHistory())
+  event.sender.send('today', fullHistory)
 })
 
 
@@ -50,4 +61,5 @@ const writeHistory = (history, content) => {
   history.my_life = newHistory
   if(!sameDay) history.my_life.push(content)
   fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
+  fullHistory = history
 }

@@ -230,21 +230,21 @@
     },
     {
       "February 8th, 2017": {
-        "chilling": "0",
-        "coding": "60",
-        "dog": "0",
+        "chilling": "60",
+        "coding": "150",
+        "dog": "100",
         "experiencing": "0",
-        "friends": "0",
-        "fruits": "0",
+        "friends": "30",
+        "fruits": "2",
         "hike": "0",
         "meditating": "0",
-        "pushups": "0",
-        "reading": "0",
+        "pushups": "200",
+        "reading": "20",
         "running": "0",
         "sleep": "8",
-        "travel": "0",
-        "veggies": "0",
-        "watching": "0"
+        "travel": "80",
+        "veggies": "3",
+        "watching": "40"
       }
     }
   ]

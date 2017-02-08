@@ -1,5 +1,6 @@
 const $ = require('jquery');
 const { ipcRenderer, remote } = require('electron');
+const menubar = remote.require('./main')
 const { showWeekChart } = require('./charts')
 const moment = require('moment')
 
@@ -30,6 +31,11 @@ $('#show-chart').on('click',(e) => {
 ipcRenderer.on('today', (event, data) => {
   showWeekChart(data)
 })
+
+ipcRenderer.on('resized', (event, data) => {
+  showWeekChart(data.data, data.bounds.width)
+})
+
 
 const sendData = () => {
   let today = moment().format('MMMM Do, YYYY')
