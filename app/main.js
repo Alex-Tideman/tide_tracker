@@ -19,15 +19,7 @@ menubar.on('ready', () => {
 
 menubar.on('after-create-window', function () {
   menubar.window.loadURL(`file://${__dirname}/index.html`);
-  menubar.window.on('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-      menubar.window.webContents.send('resized' , {data: fullHistory, bounds: menubar.window.getBounds()});
-    }, 250);
-
-  })
 });
-
 
 ipcMain.on('today', (event, data) => {
   saveFile(data)
