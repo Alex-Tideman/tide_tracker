@@ -4,8 +4,8 @@ const { app, ipcMain, dialog } = require('electron');
 const fs = require('fs')
 const Menubar = require('menubar');
 const menubar = Menubar({
-  width: 800,
-  height: 800,
+  width: 400,
+  height: 500,
   icon: './images/icon.png'
 })
 const historyFile = 'my_life.json'
