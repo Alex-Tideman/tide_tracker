@@ -91,7 +91,7 @@ input {
 .content-group {
   display: flex;
   flex: 1;
-  text-align: right;
+  text-align: center;
   margin-top: 20px;
   padding: 10px;
   font-size: 12px;

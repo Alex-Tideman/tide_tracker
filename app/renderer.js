@@ -1,5 +1,5 @@
 const $ = require('jquery');
-const { ipcRenderer } = require('electron');
+const { ipcRenderer, remote } = require('electron');
 const { showWeekChart } = require('./charts')
 const moment = require('moment')
 
