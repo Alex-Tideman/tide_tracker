@@ -24,7 +24,6 @@ menubar.on('after-create-window', function () {
     resizeTimer = setTimeout(function() {
       menubar.window.webContents.send('resized' , {data: fullHistory, bounds: menubar.window.getBounds()});
     }, 250);
-
   })
 });
 
