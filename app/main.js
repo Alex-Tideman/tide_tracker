@@ -6,7 +6,7 @@ const Menubar = require('menubar');
 const menubar = Menubar({
   width: 800,
   height: 800,
-  icon: './images/Running.png'
+  icon: './images/icon.png'
 })
 const historyFile = 'my_life.json'
 

@@ -1,6 +1,25 @@
 {
   "my_life": [
     {
+      "February 4th, 2017": {
+        "chilling": "100",
+        "coding": "0",
+        "dog": "100",
+        "experiencing": "100",
+        "friends": "100",
+        "fruits": "0",
+        "hike": "0",
+        "meditating": "20",
+        "pushups": "0",
+        "reading": "0",
+        "running": "0",
+        "sleep": "6",
+        "travel": "0",
+        "veggies": "0",
+        "watching": "60"
+      }
+    },
+    {
       "February 5th, 2017": {
         "chilling": "20",
         "coding": "45",
@@ -22,14 +41,14 @@
     {
       "February 6th, 2017": {
         "chilling": "100",
-        "coding": "0",
+        "coding": "100",
         "dog": "120",
         "experiencing": "60",
         "friends": "20",
         "fruits": "0",
         "hike": "20",
         "meditating": "0",
-        "pushups": "100",
+        "pushups": "200",
         "reading": "60",
         "running": "2.5",
         "sleep": "7",
@@ -41,20 +60,20 @@
     {
       "February 7th, 2017": {
         "chilling": "60",
-        "coding": "150",
+        "coding": "200",
         "dog": "100",
         "experiencing": "0",
-        "friends": "30",
+        "friends": "0",
         "fruits": "2",
         "hike": "0",
         "meditating": "0",
-        "pushups": "200",
-        "reading": "20",
+        "pushups": "80",
+        "reading": "0",
         "running": "0",
         "sleep": "8",
         "travel": "80",
         "veggies": "3",
-        "watching": "40"
+        "watching": "0"
       }
     }
   ]

@@ -1,6 +1,4 @@
 const getChartData = exports.getChartData = (dayChartData) => {
-  // for(var i = 0; i < dayChartData.length; i++) {
-  // }
   const greenBar = 'rgba(76, 195, 85, 0.2)'
   const blueBar = 'rgba(17, 204, 238, 0.2)'
   const yellowBar = 'rgba(255, 187, 17, 0.2)'
@@ -8,246 +6,120 @@ const getChartData = exports.getChartData = (dayChartData) => {
   const blueBorder = 'rgba(17, 204, 238, 1)'
   const yellowBorder = 'rgba(255, 187, 17, 1)'
 
+  const totalDays = dayChartData.length / 15
+  const getCategoryData = (n) => {
+    const points = []
+    for(let i = 0; i < totalDays; i++) {
+      points.push({x: (-10 + (i*10)), y: dayChartData[n + i*(15)]})
+    }
+    return points
+  }
+
   return [
     {
       label: 'Chilling',
       borderColor: blueBorder,
       pointBorderColor: blueBorder,
       backgroundColor: blueBar,
-      data: [{
-          x: -10,
-          y: dayChartData[0]
-      }, {
-          x: 0,
-          y: dayChartData[15]
-      }, {
-          x: 10,
-          y: dayChartData[30]
-      }]
+      data: getCategoryData(0)
     },
     {
       label: 'Coding',
       borderColor: yellowBorder,
       pointBorderColor: yellowBorder,
       backgroundColor: yellowBar,
-      data: [{
-          x: -10,
-          y: dayChartData[1]
-      }, {
-          x: 0,
-          y: dayChartData[16]
-      }, {
-          x: 10,
-          y: dayChartData[31]
-      }]
+      data: getCategoryData(1)
     },
     {
       label: 'Dog',
       borderColor: blueBorder,
       pointBorderColor: blueBorder,
       backgroundColor: blueBar,
-      data: [{
-          x: -10,
-          y: dayChartData[2]
-      }, {
-          x: 0,
-          y: dayChartData[17]
-      }, {
-          x: 10,
-          y: dayChartData[32]
-      }]
+      data: getCategoryData(2)
     },
     {
       label: 'Experiencing',
       borderColor: yellowBorder,
       pointBorderColor: yellowBorder,
       backgroundColor: yellowBar,
-      data: [{
-          x: -10,
-          y: dayChartData[3]
-      }, {
-          x: 0,
-          y: dayChartData[18]
-      }, {
-          x: 10,
-          y: dayChartData[33]
-      }]
+      data: getCategoryData(3)
     },
     {
       label: 'Friends',
       borderColor: blueBorder,
       pointBorderColor: blueBorder,
       backgroundColor: blueBar,
-      data: [{
-          x: -10,
-          y: dayChartData[4]
-      }, {
-          x: 0,
-          y: dayChartData[19]
-      }, {
-          x: 10,
-          y: dayChartData[34]
-      }]
+      data: getCategoryData(4)
     },
     {
       label: 'Fruits',
       borderColor: greenBorder,
       pointBorderColor: greenBorder,
       backgroundColor: greenBar,
-      data: [{
-          x: -10,
-          y: dayChartData[5]
-      }, {
-          x: 0,
-          y: dayChartData[20]
-      }, {
-          x: 10,
-          y: dayChartData[35]
-      }]
+      data: getCategoryData(5)
     },
     {
       label: 'Hike',
       borderColor: blueBorder,
       pointBorderColor: blueBorder,
       backgroundColor: blueBar,
-      data: [{
-          x: -10,
-          y: dayChartData[6]
-      }, {
-          x: 0,
-          y: dayChartData[21]
-      }, {
-          x: 10,
-          y: dayChartData[36]
-      }]
+      data: getCategoryData(6)
     },
     {
       label: 'Meditating',
       borderColor: yellowBorder,
       pointBorderColor: yellowBorder,
       backgroundColor: yellowBar,
-      data: [{
-          x: -10,
-          y: dayChartData[7]
-      }, {
-          x: 0,
-          y: dayChartData[22]
-      }, {
-          x: 10,
-          y: dayChartData[37]
-      }]
+      data: getCategoryData(7)
     },
     {
       label: 'Pushups',
       borderColor: greenBorder,
       pointBorderColor: greenBorder,
       backgroundColor: greenBar,
-      data: [{
-          x: -10,
-          y: dayChartData[8]
-      }, {
-          x: 0,
-          y: dayChartData[23]
-      }, {
-          x: 10,
-          y: dayChartData[38]
-      }]
+      data: getCategoryData(8)
     },
     {
       label: 'Reading',
       borderColor: yellowBorder,
       pointBorderColor: yellowBorder,
       backgroundColor: yellowBar,
-      data: [{
-          x: -10,
-          y: dayChartData[9]
-      }, {
-          x: 0,
-          y: dayChartData[24]
-      }, {
-          x: 10,
-          y: dayChartData[39]
-      }]
+      data: getCategoryData(9)
     },
     {
       label: 'Running',
       borderColor: blueBorder,
       pointBorderColor: blueBorder,
       backgroundColor: blueBar,
-      data: [{
-          x: -10,
-          y: dayChartData[10]
-      }, {
-          x: 0,
-          y: dayChartData[25]
-      }, {
-          x: 10,
-          y: dayChartData[40]
-      }]
+      data: getCategoryData(10)
     },
     {
       label: 'Sleep',
       borderColor: greenBorder,
       pointBorderColor: greenBorder,
       backgroundColor: greenBar,
-      data: [{
-          x: -10,
-          y: dayChartData[11]
-      }, {
-          x: 0,
-          y: dayChartData[26]
-      }, {
-          x: 10,
-          y: dayChartData[41]
-      }]
+      data: getCategoryData(11)
     },
     {
       label: 'Walking',
       borderColor: greenBorder,
       pointBorderColor: greenBorder,
       backgroundColor: greenBar,
-      data: [{
-          x: -10,
-          y: dayChartData[12]
-      }, {
-          x: 0,
-          y: dayChartData[27]
-      }, {
-          x: 10,
-          y: dayChartData[42]
-      }]
+      data: getCategoryData(12)
     },
     {
       label: 'Veggies',
       borderColor: greenBorder,
       pointBorderColor: greenBorder,
       backgroundColor: greenBar,
-      data: [{
-          x: -10,
-          y: dayChartData[13]
-      }, {
-          x: 0,
-          y: dayChartData[28]
-      }, {
-          x: 10,
-          y: dayChartData[43]
-      }]
+      data: getCategoryData(13)
     },
     {
       label: 'Watching',
       borderColor: yellowBorder,
       pointBorderColor: yellowBorder,
       backgroundColor: yellowBar,
-      data: [{
-          x: -10,
-          y: dayChartData[14]
-      }, {
-          x: 0,
-          y: dayChartData[29]
-      }, {
-          x: 10,
-          y: dayChartData[44]
-      }]
+      data: getCategoryData(14)
     }
   ]
 }
