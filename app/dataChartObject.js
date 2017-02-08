@@ -1,10 +1,11 @@
+const greenBar = 'rgba(76, 195, 85, 0.2)'
+const blueBar = 'rgba(17, 204, 238, 0.2)'
+const yellowBar = 'rgba(255, 187, 17, 0.2)'
+const greenBorder = 'rgba(76, 195, 85, 1)'
+const blueBorder = 'rgba(17, 204, 238, 1)'
+const yellowBorder = 'rgba(255, 187, 17, 1)'
+
 const getChartData = exports.getChartData = (dayChartData) => {
-  const greenBar = 'rgba(76, 195, 85, 0.2)'
-  const blueBar = 'rgba(17, 204, 238, 0.2)'
-  const yellowBar = 'rgba(255, 187, 17, 0.2)'
-  const greenBorder = 'rgba(76, 195, 85, 1)'
-  const blueBorder = 'rgba(17, 204, 238, 1)'
-  const yellowBorder = 'rgba(255, 187, 17, 1)'
 
   const totalDays = dayChartData.length / 15
   const getCategoryData = (n) => {

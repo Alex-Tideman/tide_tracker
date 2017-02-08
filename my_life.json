@@ -1,6 +1,158 @@
 {
   "my_life": [
     {
+      "March 27th, 2017": {
+        "chilling": "0",
+        "coding": "120",
+        "dog": "100",
+        "experiencing": "0",
+        "friends": "30",
+        "fruits": "1",
+        "hike": "0",
+        "meditating": "0",
+        "pushups": "0",
+        "reading": "30",
+        "running": "0",
+        "sleep": "8",
+        "travel": "80",
+        "veggies": "3",
+        "watching": "80"
+      }
+    },
+    {
+      "March 28th, 2017": {
+        "chilling": "60",
+        "coding": "100",
+        "dog": "45",
+        "experiencing": "200",
+        "friends": "200",
+        "fruits": "1",
+        "hike": "0",
+        "meditating": "0",
+        "pushups": "0",
+        "reading": "0",
+        "running": "0",
+        "sleep": "6",
+        "travel": "100",
+        "veggies": "3",
+        "watching": "0"
+      }
+    },
+    {
+      "March 29th, 2017": {
+        "chilling": "100",
+        "coding": "0",
+        "dog": "100",
+        "experiencing": "100",
+        "friends": "100",
+        "fruits": "0",
+        "hike": "0",
+        "meditating": "20",
+        "pushups": "0",
+        "reading": "0",
+        "running": "0",
+        "sleep": "6",
+        "travel": "0",
+        "veggies": "0",
+        "watching": "60"
+      }
+    },
+    {
+      "March 30th, 2017": {
+        "chilling": "20",
+        "coding": "45",
+        "dog": "20",
+        "experiencing": "0",
+        "friends": "75",
+        "fruits": "3",
+        "hike": "40",
+        "meditating": "20",
+        "pushups": "20",
+        "reading": "0",
+        "running": "1.5",
+        "sleep": "8",
+        "travel": "30",
+        "veggies": "2",
+        "watching": "20"
+      }
+    },
+    {
+      "March 31st, 2017": {
+        "chilling": "100",
+        "coding": "100",
+        "dog": "120",
+        "experiencing": "60",
+        "friends": "20",
+        "fruits": "0",
+        "hike": "20",
+        "meditating": "0",
+        "pushups": "200",
+        "reading": "60",
+        "running": "2.5",
+        "sleep": "7",
+        "travel": "30",
+        "veggies": "2",
+        "watching": "20"
+      }
+    },
+    {
+      "February 1st, 2017": {
+        "chilling": "60",
+        "coding": "200",
+        "dog": "100",
+        "experiencing": "0",
+        "friends": "30",
+        "fruits": "2",
+        "hike": "0",
+        "meditating": "0",
+        "pushups": "75",
+        "reading": "20",
+        "running": "0",
+        "sleep": "8",
+        "travel": "80",
+        "veggies": "4",
+        "watching": "0"
+      }
+    },
+    {
+      "February 2nd, 2017": {
+        "chilling": "0",
+        "coding": "120",
+        "dog": "100",
+        "experiencing": "0",
+        "friends": "30",
+        "fruits": "1",
+        "hike": "0",
+        "meditating": "0",
+        "pushups": "0",
+        "reading": "30",
+        "running": "0",
+        "sleep": "8",
+        "travel": "80",
+        "veggies": "3",
+        "watching": "80"
+      }
+    },
+    {
+      "February 3rd, 2017": {
+        "chilling": "60",
+        "coding": "100",
+        "dog": "45",
+        "experiencing": "200",
+        "friends": "200",
+        "fruits": "1",
+        "hike": "0",
+        "meditating": "0",
+        "pushups": "0",
+        "reading": "0",
+        "running": "0",
+        "sleep": "6",
+        "travel": "100",
+        "veggies": "3",
+        "watching": "0"
+      }
+    },
+    {
       "February 4th, 2017": {
         "chilling": "100",
         "coding": "0",
@@ -63,16 +215,16 @@
         "coding": "200",
         "dog": "100",
         "experiencing": "0",
-        "friends": "0",
+        "friends": "30",
         "fruits": "2",
         "hike": "0",
         "meditating": "0",
         "pushups": "80",
-        "reading": "0",
+        "reading": "20",
         "running": "0",
         "sleep": "8",
         "travel": "80",
-        "veggies": "3",
+        "veggies": "5",
         "watching": "0"
       }
     }
