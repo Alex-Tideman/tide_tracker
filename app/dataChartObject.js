@@ -7,7 +7,7 @@ const yellowBorder = 'rgba(255, 187, 17, 1)'
 
 const getChartData = exports.getChartData = (dayChartData, width) => {
   let totalDays
-  if(width < 500) {
+  if(width < 600) {
     totalDays = 5
   }
   if(width > 500) {

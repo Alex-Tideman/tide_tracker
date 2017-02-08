@@ -9,6 +9,11 @@ const showWeekChart = exports.showWeekChart = (data, width = 400) => {
   let labels = days.map((day) => {
     return Object.keys(day)[0]
   })
+
+  if(width < 600) {
+    labels = labels.slice(labels.length - 5, labels.length)
+  }
+
   let dayChartData =[]
   days.forEach((day) => {
     let dayData = day[Object.keys(day)[0]]

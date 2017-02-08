@@ -23,7 +23,7 @@ menubar.on('after-create-window', function () {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
       menubar.window.webContents.send('resized' , {data: fullHistory, bounds: menubar.window.getBounds()});
-    }, 250);
+    }, 150);
   })
 });
 
