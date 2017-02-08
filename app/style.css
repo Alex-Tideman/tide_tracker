@@ -45,13 +45,14 @@ textarea, input, div, button { outline: none; }
 
 input {
   font-size: 10px;
-  width: 45px;
-  height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding-left: 2px;
   padding-right: 2px;
   text-align: center;
+  border-radius: 50%;
 }
 
 .date{
@@ -90,11 +91,14 @@ input {
 .content-group {
   display: flex;
   flex: 1;
-  align-items: center;
-  text-align: center;
+  text-align: right;
   margin-top: 20px;
   padding: 10px;
   font-size: 12px;
+}
+
+.content-group div{
+  width: 150px;
 }
 
 .wellness {
@@ -111,6 +115,7 @@ input {
 
 #submit {
   width: 50%;
+  display: inline;
   height: 50px;
   color: #fff;
   font-size: 16px;
@@ -119,8 +124,21 @@ input {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 10px;
+  margin-bottom: 20px;
   border-radius: 15px;
   background: rgba(76, 195, 85, 0.9); /* Standard syntax */
+}
+
+#show-chart {
+  float: right;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  margin-top: -70px;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 

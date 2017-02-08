@@ -4,6 +4,8 @@ const { app, ipcMain, dialog } = require('electron');
 const fs = require('fs')
 const Menubar = require('menubar');
 const menubar = Menubar({
+  width: 800,
+  height: 800,
   icon: './images/Running.png'
 })
 const historyFile = 'my_life.json'
@@ -20,6 +22,11 @@ ipcMain.on('today', (event, data) => {
   saveFile(data)
   event.sender.send('today', readHistory())
 })
+
+ipcMain.on('get-chart', (event, data) => {
+  event.sender.send('today', readHistory())
+})
+
 
 const saveFile = (content) => {
   if (!content) { return; }

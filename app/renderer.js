@@ -1,6 +1,6 @@
 const $ = require('jquery');
 const { ipcRenderer } = require('electron');
-const { showTodaysChart, showWeekChart } = require('./charts')
+const { showWeekChart } = require('./charts')
 const moment = require('moment')
 
 const setTime = () => {
@@ -16,11 +16,22 @@ setInterval(function () {
   $('#today').empty()
   $('#time').empty()
   setTime()
-}, 1000);
+}, 1000)
 
 $('#submit').on('click',(e) => {
   e.preventDefault()
+  sendData()
+})
 
+$('#show-chart').on('click',(e) => {
+  ipcRenderer.send('get-chart', 'get me my chart')
+})
+
+ipcRenderer.on('today', (event, data) => {
+  showWeekChart(data)
+})
+
+const sendData = () => {
   let today = moment().format('MMMM Do, YYYY')
   ipcRenderer.send('today', {
     [today]: {
@@ -41,14 +52,4 @@ $('#submit').on('click',(e) => {
     'meditating': $('#meditating').val()
     }
   })
-})
-
-ipcRenderer.on('today', (event, data) => {
-  debugger
-  renderCharts(data)
-  // $('body').addClass('saved')
-})
-
-const renderCharts = (data) => {
-  showWeekChart(data)
 }
