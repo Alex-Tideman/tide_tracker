@@ -32,10 +32,6 @@ ipcRenderer.on('today', (event, data) => {
   showWeekChart(data)
 })
 
-ipcRenderer.on('resized', (event, data) => {
-  showWeekChart(data.data, data.bounds.width)
-})
-
 
 const sendData = () => {
   let today = moment().format('MMMM Do, YYYY')
