@@ -18,8 +18,25 @@ menubar.on('ready', () => {
 });
 
 menubar.on('after-create-window', function () {
+  menubar.tray.setImage('./images/fire.png')
   menubar.window.loadURL(`file://${__dirname}/index.html`);
+  menubar.window.on('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      menubar.window.webContents.send('resized' , {data: fullHistory, bounds: menubar.window.getBounds()});
+    }, 150);
+  })
 });
+
+menubar.on('after-hide', function () {
+  menubar.tray.setImage('./images/icon.png')
+});
+
+menubar.on('after-show', function () {
+  menubar.tray.setImage('./images/fire.png')
+});
+
+
 
 ipcMain.on('today', (event, data) => {
   saveFile(data)

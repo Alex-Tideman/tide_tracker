@@ -5,8 +5,11 @@ const greenBorder = 'rgba(76, 195, 85, 1)'
 const blueBorder = 'rgba(17, 204, 238, 1)'
 const yellowBorder = 'rgba(255, 187, 17, 1)'
 
-const getChartData = exports.getChartData = (dayChartData) => {
+const getChartData = exports.getChartData = (dayChartData, width) => {
   let totalDays = dayChartData.length / 15
+  if(width < 600) {
+    totalDays = 5
+  }
 
   const getCategoryData = (n) => {
     const points = []
