@@ -230,21 +230,40 @@
     },
     {
       "February 8th, 2017": {
-        "chilling": "60",
+        "chilling": "30",
         "coding": "150",
-        "dog": "100",
-        "experiencing": "0",
-        "friends": "30",
+        "dog": "40",
+        "experiencing": "60",
+        "friends": "200",
         "fruits": "2",
         "hike": "0",
         "meditating": "0",
-        "pushups": "200",
-        "reading": "20",
+        "pushups": "0",
+        "reading": "0",
         "running": "0",
         "sleep": "8",
         "travel": "80",
         "veggies": "3",
-        "watching": "40"
+        "watching": "0"
+      }
+    },
+    {
+      "February 9th, 2017": {
+        "chilling": "0",
+        "coding": "40",
+        "dog": "20",
+        "experiencing": "0",
+        "friends": "0",
+        "fruits": "0",
+        "hike": "0",
+        "meditating": "0",
+        "pushups": "0",
+        "reading": "0",
+        "running": "0",
+        "sleep": "8",
+        "travel": "40",
+        "veggies": "0",
+        "watching": "0"
       }
     }
   ]
