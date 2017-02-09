@@ -23,7 +23,7 @@ const showWeekChart = exports.showWeekChart = (data, width = 400) => {
       type: 'line',
       data: {
           labels: labels,
-          datasets: getChartData(dayChartData, width)
+          datasets: getChartData(dayChartData)
       },
       options: {
           spanGaps: true,

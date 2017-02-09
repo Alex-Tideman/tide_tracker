@@ -5,7 +5,7 @@ const greenBorder = 'rgba(76, 195, 85, 1)'
 const blueBorder = 'rgba(17, 204, 238, 1)'
 const yellowBorder = 'rgba(255, 187, 17, 1)'
 
-const getChartData = exports.getChartData = (dayChartData, width) => {
+const getChartData = exports.getChartData = (dayChartData) => {
   let totalDays = dayChartData.length / 15
 
   const getCategoryData = (n) => {
