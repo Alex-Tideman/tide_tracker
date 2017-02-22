@@ -10,7 +10,7 @@ const getChartData = exports.getChartData = (dayChartData, width) => {
   if(width < 600) {
     totalDays = 5
   }
-  
+
   const getCategoryData = (n) => {
     const points = []
     for(let i = 0; i < totalDays; i++) {
